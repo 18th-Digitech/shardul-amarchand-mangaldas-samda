@@ -53,31 +53,33 @@
 
 /* Side menu container */
 .nav-sections ul {
-  position: fixed;
-  top: 0;
-  right: -320px;               /* hidden initially */
-  width: 320px;
-  height: 100vh;
-  background: linear-gradient(180deg, #0b1f5a, #081a4a);
-  padding: 80px 30px;
-  margin: 0;
-  list-style: none;
-  transition: right 0.4s ease;
-  z-index: 1000;
+  display: none;
+  
 }
 
 /* Active state */
 .nav-sections ul.active {
-  right: 0;
+  display: block;
+  position: fixed;
+  top: 120px;
+  right: -18px;
+  width: 176px;
+  height: auto;
+  background: #0b1f5b;
+  padding: 21px 55px;
+  margin: 0;
+  list-style: none;
+  transition: right 0.4s ease;
+  z-index: 1023;
 }
 
 /* Menu items */
 .nav-sections ul li {
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 14px 0;
+  padding: 8px 0;
   cursor: pointer;
   position: relative;
 }
@@ -89,6 +91,7 @@
   left: -20px;
   font-size: 22px;
   opacity: 0.9;
+  top: 2px;
 }
 
 /* Hover effect */
