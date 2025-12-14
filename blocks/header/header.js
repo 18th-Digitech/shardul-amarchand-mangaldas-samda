@@ -174,4 +174,3 @@ document.addEventListener('click', (e) => {
     menu.classList.toggle('inactive');
   }
 });
-
