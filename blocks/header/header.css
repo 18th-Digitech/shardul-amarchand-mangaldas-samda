@@ -30,6 +30,21 @@
   filter: brightness(0) invert(1);
 }
 
+.icon-menu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff; /* controls SVG color */
+}
+
+/* Make SVG follow color */
+.icon-menu img {
+  width: 26px;
+  height: 16px;
+  filter: brightness(0) invert(1); /* fallback if SVG is black */
+}
+
 /* ===== LOGO ===== */
 .nav-brand picture img {
   max-height: 90px;
@@ -42,13 +57,6 @@
 .nav-sections {
   display: flex;
   align-items: center;
-}
-
-/* Menu toggle icon */
-.icon-menu {
-  cursor: pointer;
-  position: relative;
-  z-index: 1100;
 }
 
 /* Side menu container */
@@ -152,17 +160,3 @@
   }
 }
 
-.icon-menu {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: #ffffff; /* controls SVG color */
-}
-
-/* Make SVG follow color */
-.icon-menu img {
-  width: 26px;
-  height: 16px;
-  filter: brightness(0) invert(1); /* fallback if SVG is black */
-}
