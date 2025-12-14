@@ -165,13 +165,16 @@ export default async function decorate(block) {
   block.append(navWrapper);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.querySelector(".nav-tools");
-  if (btn){
-    menu.classList.add("inactive");
-    btn.addEventListener("click", () => {
-        menu.classList.toggle("active");
-        menu.classList.toggle("inactive");
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.nav-tools');
+  const menu = document.querySelector('.nav-sections');
+
+  if (btn) {
+    menu.classList.add('inactive');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      menu.classList.toggle('inactive');
     });
-  } 
+  }
 });
