@@ -80,10 +80,11 @@
   transform: translateY(-36%);
 }
 
-/* ===== HAMBURGER ===== */
+/* ===== HAMBURGER =====
 .nav-hamburger {
   display: flex;
   align-items: center;
+  order:99;
 }
 
 .nav-hamburger button {
@@ -115,7 +116,7 @@
 
 .nav-hamburger-icon::after {
   top: 8px;
-}
+} */
 
 /* ===== RESPONSIVE (MODERN RANGE SYNTAX) ===== */
 @media (width <= 768px) {
