@@ -177,10 +177,10 @@ document.addEventListener('click', (e) => {
   const btn1 = e.target.closest('.icon-menu');
   if (btn1) {
     const menu1 = btn1.closest('.default-content-wrapper').querySelector('ul');
-    menu.classList.add('inactive');
-    if (btn && menu) {
-      menu.classList.toggle('active');
-      menu.classList.toggle('inactive');
+    menu1.classList.add('inactive');
+    if (btn1 && menu1) {
+      menu1.classList.toggle('active');
+      menu1.classList.toggle('inactive');
     }
   }
 });
