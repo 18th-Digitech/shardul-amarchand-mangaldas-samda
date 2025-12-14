@@ -110,7 +110,11 @@
 }
 
 /* ===== SEARCH TOOL ===== */
-.nav-tools {
+.nav-tools{
+  display: none;
+}
+
+.nav-tools.active{
   flex: 1;
   display: flex;
   justify-content: end;
