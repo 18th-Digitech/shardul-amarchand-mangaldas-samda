@@ -40,7 +40,60 @@
 
 /* ===== NAV SECTIONS ===== */
 .nav-sections {
-  display: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Menu toggle icon */
+.icon-menu {
+  cursor: pointer;
+  position: relative;
+  z-index: 1100;
+}
+
+/* Side menu container */
+.nav-sections ul {
+  position: fixed;
+  top: 0;
+  right: -320px;               /* hidden initially */
+  width: 320px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0b1f5a, #081a4a);
+  padding: 80px 30px;
+  margin: 0;
+  list-style: none;
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+/* Active state */
+.nav-sections ul.active {
+  right: 0;
+}
+
+/* Menu items */
+.nav-sections ul li {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Arrow icons on left */
+.nav-sections ul li::before {
+  content: "‹";
+  position: absolute;
+  left: -20px;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+/* Hover effect */
+.nav-sections ul li:hover {
+  opacity: 0.8;
 }
 
 /* ===== SEARCH TOOL ===== */
@@ -80,43 +133,10 @@
   transform: translateY(-36%);
 }
 
-/* ===== HAMBURGER =====
+/* ===== HAMBURGER ===== */
 .nav-hamburger {
-  display: flex;
-  align-items: center;
-  order:99;
+  display: none;
 }
-
-.nav-hamburger button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.nav-hamburger-icon {
-  width: 24px;
-  height: 2px;
-  background: #fff;
-  position: relative;
-}
-
-.nav-hamburger-icon::before,
-.nav-hamburger-icon::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background: #fff;
-  left: 0;
-}
-
-.nav-hamburger-icon::before {
-  top: -8px;
-}
-
-.nav-hamburger-icon::after {
-  top: 8px;
-} */
 
 /* ===== RESPONSIVE (MODERN RANGE SYNTAX) ===== */
 @media (width <= 768px) {
