@@ -117,3 +117,44 @@ main {
 .columns-2-cols > div > div:last-child a:hover {
   color: var(--blue);
 }
+
+/* Added Sumit Sir Css 15 Ded */
+.columns-container .columns-2-cols h3 {
+    color: #002856 !important;
+    font-family: Playfair Display, serif;
+    font-size: 18px !important;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 0;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.columns-container ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.columns-container ul li {
+    padding: 0 !important;
+}
+
+.columns-container ul li:before {
+    background: #002856;
+    content: "" !important;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 9pt;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 9pt;
+}
