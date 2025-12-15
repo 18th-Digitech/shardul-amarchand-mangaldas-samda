@@ -98,7 +98,7 @@ main {
     padding: 0 !important;
 }
 
-.columns-container ul li:before {
+.columns-container ul li::before {
     background: #002856;
     content: "" !important;
     display: inline-flex;
