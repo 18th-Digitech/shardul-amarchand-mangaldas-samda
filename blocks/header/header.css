@@ -156,12 +156,21 @@
 
 /* ===== RESPONSIVE (MODERN RANGE SYNTAX) ===== */
 @media (width <= 768px) {
+  .columns-2-cols > div > div:last-child {
+    background: #e6e6e6;
+    position: relative;
+    flex: 1;
+    padding: 11px 30px;
+    height: auto;
+    width: 84%;
+    top: -70px;
+  }
+
   .nav-tools {
-    display: none;
+    top: 113%;
   }
 
   .nav-brand picture img {
     max-height: 48px;
   }
 }
-
