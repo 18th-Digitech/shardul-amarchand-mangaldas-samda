@@ -170,7 +170,7 @@
 
   main {
     max-width: 1200px;
-    margin: 144px auto;
+    margin: 144px auto 30px;
     padding: 0 24px;
   }
 
@@ -185,7 +185,7 @@
     padding: 11px 30px;
     height: auto;
     width: 84%;
-    top: -50px;
+    margin-top: 45px;
   }
 
   .nav-sections ul.active {
